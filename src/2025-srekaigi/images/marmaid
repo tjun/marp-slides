@@ -1,0 +1,34 @@
+graph LR
+    JE[ジュニア<br>エンジニア] --> SE[シニア<br>エンジニア]
+    SE --> EM[エンジニアリング<br>マネージャー]
+    SE --> STAFF[スタッフ<br>エンジニア]
+    STAFF --> PRINCIPAL[プリンシパル<br>エンジニア]
+    EM --> DIR[ディレクター]
+    PRINCIPAL --> DIST[ディスティングイッシュ<br>エンジニア]
+    DIR --> VP[VP of Engineering]
+
+    %% スタイリング
+    classDef technical fill:#e1f5fe,stroke:#01579b
+    classDef management fill:#f3e5f5,stroke:#4a148c
+    classDef back fill:#f9f9f9,stroke:#f9f9f9
+
+    
+    class JE,SE,STAFF,PRINCIPAL,DIST technical
+    class EM,DIR,VP management
+    
+    %% サブグラフでグループ化
+    subgraph 技術職
+        JE
+        SE
+        STAFF
+        PRINCIPAL
+        DIST
+    end
+    class 技術職 back
+    
+    subgraph マネージメント職
+        EM
+        DIR
+        VP
+    end
+    class マネージメント職 back

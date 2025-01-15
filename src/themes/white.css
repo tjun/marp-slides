@@ -1,0 +1,122 @@
+/* @theme db-white */
+
+@import 'default';
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans+JP&display=swap');
+
+h1 {
+  color: var(--db-main);
+  margin-top: 1rem;
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+h2 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+h1 + h2 {
+  margin-top: 0;
+}
+
+p,
+ul,
+ol,
+blockquote {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+li + li,
+li > ul {
+  margin-top: 0.4rem;
+}
+li::marker {
+  color: var(--db-gray);
+}
+
+section::after {
+  /* content: attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total); */
+  background: var(--db-dark);
+  color: var(--db-white);
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  font-size: 0.8rem;
+}
+
+.columns {
+  color: #272a2c;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.col2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.col3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.col2 > * {
+  margin: 0;
+}
+
+:root {
+  --db-blue: oklch(0.65 0.05 240);
+  --db-main:oklch(0.38 0.1 240);
+  --db-green: oklch(0.84 0.1 169);
+  --db-dark: oklch(0.5 0.05 240);
+  --db-gray: oklch(0.6 0.03 240);
+  --db-black: oklch(0.25 0.02 240);
+  --db-white: oklch(0.96 0 0);
+}
+
+section {
+  font-family: Inter, 'Noto Sans JP', sans-serif !important;
+  --fgColor-accent: var(--db-dark);
+  --fgColor-default: var(--db-black);
+  --header-footer-color: var(--db-gray);
+  --paginate-color: var(--db-gray);
+}
+
+strong {
+  font-weight: 700;
+}
+
+pre {
+  font-size: 0.5rem;
+  line-height: 1.5;
+}
+
+img {
+  background: none !important;
+}
+
+.highlight {
+  background-color: rgb(205, 236, 250); /* お好みの色に変更可能 */
+  padding: 0.2em; /* テキスト周りの余白 */
+  border-radius: 0.2em; /* 角を丸くするオプション */
+}
+
+blockquote > blockquote > blockquote {
+  font-size: 50%;
+  font-weight: 400;
+  padding: 0;
+  padding-top: 0.25rem;
+  margin: 0;
+  border: 0;
+  border-top: 0.01rem solid var(--db-gray);
+  position: absolute;
+  width: 800px;
+  bottom: 80px;
+  left: 80px;
+
+  & > ol > li {
+    margin-top: 0;
+  }
+}
