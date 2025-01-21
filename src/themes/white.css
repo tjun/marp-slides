@@ -103,6 +103,10 @@ img {
   border-radius: 0.2em; /* 角を丸くするオプション */
 }
 
+.small {
+  font-size: 0.8rem;
+}
+
 blockquote > blockquote > blockquote {
   font-size: 50%;
   font-weight: 400;
@@ -112,8 +116,8 @@ blockquote > blockquote > blockquote {
   border: 0;
   border-top: 0.01rem solid var(--db-gray);
   position: absolute;
-  width: 800px;
-  bottom: 80px;
+  width: 900px;
+  bottom: 60px;
   left: 80px;
 
   & > ol > li {
