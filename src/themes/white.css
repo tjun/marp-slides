@@ -20,7 +20,7 @@ h1 + h2 {
 }
 
 p + h1 {
-  margin-top: 0.1rem; /* 必要に応じて値を調整してください */
+  margin-top: 0.1rem;
 }
 
 p,
@@ -114,15 +114,15 @@ img {
 }
 
 .highlight {
-  background-color: rgb(205, 236, 250); /* お好みの色に変更可能 */
-  padding: 0.2em; /* テキスト周りの余白 */
-  border-radius: 0.2em; /* 角を丸くするオプション */
+  background-color: rgb(205, 236, 250);
+  padding: 0.2em;
+  border-radius: 0.2em;
 }
 
 .label {
-  background-color: rgb(237, 238, 239); /* お好みの色に変更可能 */
-  padding: 0.1em; /* テキスト周りの余白 */
-  border-radius: 0.1em; /* 角を丸くするオプション */
+  background-color: rgb(237, 238, 239);
+  padding: 0.1em;
+  border-radius: 0.1em;
   font-size: 0.8rem;
 }
 

@@ -2,7 +2,6 @@
 marp: true
 paginate: true
 theme: db-white
-image: https://slides.su8.run/241004-hupass/index.jpg
 ---
 
 <!-- paginate: false -->
