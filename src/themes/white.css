@@ -111,6 +111,9 @@ pre {
 
 img {
   background: none !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .highlight {
@@ -137,7 +140,7 @@ blockquote > blockquote > blockquote {
   padding-top: 0.25rem;
   margin: 0;
   border: 0;
-  border-top: 0.01rem solid var(--db-gray);
+  /* border-top: 0.01rem solid var(--db-gray); */
   position: absolute;
   width: 900px;
   bottom: 60px;
